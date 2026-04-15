@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Galería de Arte | Galeria Vive</title>
+    <link rel="stylesheet" href="assets/index.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"/>
+</head>
+<body>
+<!-- menu  -->
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body py-3 mb-0 custom-navbar" data-bs-theme="dark">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="navbar-brand text-white fs-4" href="#">Galería Vive</a>
+            
+            <!-- Botón hamburguesa para móvil -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav gap-4">
+                    <a class="nav-link text-white activo" href="index.html">Inicio</a>
+                    <a class="nav-link text-white" href="galeria.html">Galería</a>
+                    <a class="nav-link text-white" href="contacto.html">Contacto</a>
+                </div>
+            </div>
+            
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar"/>
+                <button class="btn btn-outline-light" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+
+<!--Encabezado  -->
+    <div class="card text-bg-dark encabezado position-relative encabezado-sin-margen">
+        <img src="img/galeria3.jpg" class="card-img" alt="Obras de arte - Pinceladas Vivas">
+        <div class="overlay"></div>
+        <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
+            <h5 class="card-title display-4 fw-bold titulo-animado">Galeria Vive</h5>
+            <p class="card-text fs-5">Obras únicas que hablan al alma. Descubre arte original creado por talentos locales e internacionales.</p>
+            <p class="card-text"><small>Actualizado semanalmente con nuevas colecciones</small></p>
+
+        </div>
+    </div>
+    
+    <!--Tarjetas de artistas  -->
+    <div class="linea-dorada-neon"></div>
+        <section class="artistas-section">
+            <div class="titulo-contenedor">
+                <p id="fecha-hoy" class="text-center mt-3 fs-5"></p>
+                <p id="saludo-hora" class="text-center mb-4 fs-5 fw-bold"></p>
+                <h2 class="titulo-artistas">Artistas Destacados</h2>
+            </div>
+            <div class="contenedor-tarjetas">
+                <div class="tarjeta-artista tarjeta-1">
+                    <img src="img/artista1.jpg" alt="Artista 1">
+                    <div class="info">
+                        <h2>Liora Ventis</h2>
+                        <p>Artista de Santiago que combina la abstracción geométrica con símbolos culturales mapuches. Liora explora la identidad chilena a través de colores vibrantes y formas dinámicas, mezclando técnicas digitales y pintura tradicional. Su trabajo es una reflexión sobre la historia y el presente del país, con un marcado compromiso social.</p>
+                        <a href="galeria.html" class="boton">Ver obras</a>
+                    </div>
+                </div>
+            
+                <div class="tarjeta-artista tarjeta-2">
+                    <img src="img/artista2.jpg" alt="Artista 2">
+                    <div class="info">
+                        <h2>Marina Solenne</h2>
+                        <p>Originaria de la Región de Los Lagos, marina es reconocida por su pintura figurativa que retrata la vida rural y las tradiciones del sur de Chile. Usa óleo sobre tela para capturar la fuerza de los paisajes y la cotidianidad de sus habitantes, con un estilo realista que mezcla romanticismo y crítica social.</p>
+                        <a href="galeria.html" class="boton">Ver obras</a>
+                    </div>
+                </div>
+            
+                <div class="tarjeta-artista tarjeta-3">
+                    <img src="img/foto4.jpg" alt="Artista 3">
+                    <div class="info">
+                        <h2>Ignacio Valdés</h2>
+                        <p>Pintor nacido en Valparaíso, Ignacio se especializa en paisajismo contemporáneo que fusiona la nostalgia porteña con técnicas de acuarela y óleo. Su obra destaca por su uso dramático de luces y sombras, evocando la atmósfera melancólica de los cerros y el puerto. Ha participado en exposiciones internacionales en Santiago, Buenos Aires y Madrid.</p>
+                        <a href="galeria.html" class="boton">Ver obras</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 Galería Vive. Todos los derechos reservados.</p>
+    </div>
+</footer>
+    
+</body>
+</html>

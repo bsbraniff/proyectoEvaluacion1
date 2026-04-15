@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajustes para el menú */
+.navbar {
+    font-size: 1.1rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Encabezado con imagen */
+.encabezado {
+    width: 100%;
+    margin: 0; 
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+}  
+
+.encabezado .card-img {
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+}
+
+/* semitransparente sobre la imagen */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+.card-img-overlay {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+/* Animación en el título */
+.titulo-animado {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+
+.titulo-animado::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 4px;
+    left: 0;
+    bottom: -8px;
+    background: #ffffff;
+    transition: width 0.4s ease;
+}
+
+.titulo-animado:hover {
+    color: #ff4545;
+}
+
+.titulo-animado:hover::after {
+    width: 100%;
+}
+
+/* Clase para el enlace activo personalizado */
+.nav-link.activo {
+    color: #ff7b00 !important; 
+    font-weight: bold;
+    border-bottom: 2px solid #ff7b00;
+}
+
+/* Tarjetas artistas */
+.titulo-artistas {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.titulo-contenedor {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.titulo-artistas::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: #e60023;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.artistas-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+.tarjeta-artista {
+    position: relative;
+    height: 450px;
+    width: 460px;
+    padding: 25px;
+    border-radius: 8px;
+    overflow: hidden;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tarjeta-artista:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta-artista img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    opacity: 0.8;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    width: 250px;
+}
+
+.tarjeta-1 {
+    background-color: #d4a0e0;
+}
+
+.tarjeta-2 {
+    background-color: #f3b1a8;
+}
+
+.tarjeta-3 {
+    background-color: #a8cfe0;
+}
+
+
+.tarjeta-artista:hover img {
+    opacity: 1;
+}
+
+.tarjeta-artista .info {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    padding-right: 230px;
+    text-align: left; 
+}
+.tarjeta-artista h2 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}   
+
+.tarjeta-artista p {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ff4545;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #c4001d;
+}
+.linea-dorada-neon {
+    height: 5px;
+    width: 100%;
+    margin:auto;
+    background: gold; 
+    box-shadow:
+        0 0 8px #FFD700,
+        0 0 16px #FFD700,
+        0 0 24px #FFA500,
+        0 0 32px #FF8C00;
+    border-radius: 2px;
+}
+
+  /* footer */
+.footer {
+    background-color: #222; 
+    color: #ccc;           
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+
+
+/* Animación del resplandor */
+@keyframes resplandorNeon {
+    0%, 100% {
+        box-shadow:
+            0 0 8px #FFD700,
+            0 0 16px #FFD700,
+            0 0 24px #FFA500,
+            0 0 32px #FF8C00;
+    }
+    50% {
+        box-shadow:
+            0 0 4px #FFD700,
+            0 0 8px #FFD700,
+            0 0 12px #FFA500,
+            0 0 16px #FF8C00;
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .contenedor-tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .contenedor-tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta-artista {
+        height: auto;
+    }
+    .tarjeta-artista {
+        height: auto;
+    }
+    .tarjeta-artista .info {
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .tarjeta-artista {
+        height: auto;
+    }
+}
+    .tarjeta-artista .info {
+        max-width: 100%;
+    }

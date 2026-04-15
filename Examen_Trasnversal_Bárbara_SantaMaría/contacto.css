@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    
+}
+/* Fondo con imagen y opacidad */
+.contact-section {
+    position: relative;
+    background: url('img/Consultora-marketing-digital.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 33, 33, 0.8); 
+    z-index: 2;
+}
+
+.contact-section .container {
+    position: relative;
+    z-index: 3;
+}
+
+.contact-info h2 {
+    font-weight: bold;
+    font-size: 55px;
+}
+
+.contact-info p {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    color: #ffa500;
+    font-size: 4.0rem;
+    margin-right: 30px;
+}
+
+.form-box {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5px);
+    width: 550px;
+    height: 550px;
+}
+
+.form-box input.form-control,
+.form-box textarea.form-control,
+.form-box select.form-select {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 12px;
+    border: 1.5px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.form-box input.form-control:focus,
+.form-box textarea.form-control:focus,
+.form-box select.form-select:focus {
+    border-color: #ffb500; 
+    box-shadow: 0 0 8px rgba(255, 181, 0, 0.6);
+    outline: none;
+}
+
+/* Botón personalizado color naranjo */
+.btn-naranjo {
+    background-color: #ffa500; 
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-naranjo:hover {
+    background-color: #e69500; 
+}
+
+/* Botón más moderno y corto */
+.btn-custom {
+    width: 250px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+  /* footer */
+.footer {
+    background-color: #222; 
+    color: #ccc;            
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+
+
+@media (max-width: 768px) {
+    .form-box {
+        width: 100% !important;
+        height: auto !important;
+        padding: 20px !important;
+    }
+}
