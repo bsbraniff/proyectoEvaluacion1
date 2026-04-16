@@ -1,0 +1,48 @@
+
+/* TARJETAS INTERACTIVAS */
+.card-nosotros {
+    background: #ffffff;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card-nosotros:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* ICONO */
+.icono {
+    width: 70px;
+    height: 70px;
+    background-color: #e9f0ff;
+    color: #0d6efd;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+/* EFECTO DEL ICONO */
+.card-nosotros:hover .icono {
+    background-color: #0d6efd;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+/* SECCIÓN QUIÉNES SOMOS */
+.img-sobre {
+    max-width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.img-sobre:hover {
+    transform: scale(1.03);
+}
