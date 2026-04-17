@@ -13,6 +13,7 @@
 }
 
 
+
 /* ICONO */
 .icono {
     width: 70px;
@@ -46,4 +47,25 @@
 
 .img-sobre:hover {
     transform: scale(1.03);
+}
+
+
+  /* footer */
+.footer {
+    background-color: #222; 
+    color: #ccc;            
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+
+
+@media (max-width: 768px) {
+    .form-box {
+        width: 100% !important;
+        height: auto !important;
+        padding: 20px !important;
+    }
 }

@@ -7,7 +7,7 @@ body {
 /* Fondo con imagen y opacidad */
 .contact-section {
     position: relative;
-    background: url('img/Consultora-marketing-digital.jpg') no-repeat center center/cover;
+    background: url('img/multiexp.jpg') no-repeat center center/cover;
     background-attachment: fixed;
     min-height: 100vh;
     display: flex;

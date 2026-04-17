@@ -32,10 +32,19 @@ body {
   height: 90vh;
   background: url('img/1.png') no-repeat center/cover;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  text-align: left;
-  padding: 400px 0 0 100px;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 80px 20px;
+  color: white
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(255, 255, 255, 0.4); 
+  z-index: -1; 
 }
 
 
@@ -54,21 +63,6 @@ body {
   background-color: #0056b3;
 }
 
-
-.hero {
-  height: 90vh;
-  background: url('img/1.png') no-repeat center;
-  background-size: cover;
-}
-
-
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(255, 255, 255, 0.4); 
-  z-index: -1; 
-}
 
 
 .card {
@@ -150,15 +144,40 @@ body {
 }
 
 
+
 .icono-servicio {
   font-size: 35px;
   color: #dc3545;
   margin-bottom: 15px;
 }
 
-@media (max-width: 768px) {
-  .hero .text-center {
-    font-size: 1.2rem;
-  }
+
+
+
+  /* footer */
+.footer {
+    background-color: #222; 
+    color: #ccc;            
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    margin-top: 40px;
 }
 
+
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 60px 20px;
+    color: black;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
